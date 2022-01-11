@@ -1,0 +1,15 @@
+---
+apiVersion: wego.weave.works/v1alpha1
+kind: Application
+metadata:
+  labels:
+    wego.weave.works/app-identifier: wego-075fc20ae6b9c978b8812bd1e88158cc
+  name: demo2-dev
+  namespace: wego-system
+spec:
+  branch: dev
+  config_url: ssh://git@github.com/markramm/gitops-config.git
+  deployment_type: kustomize
+  path: ./
+  source_type: git
+  url: ssh://git@github.com/markramm/demo2.git
