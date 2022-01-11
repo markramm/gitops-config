@@ -1,0 +1,9 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+metadata:
+  name: demo1
+  namespace: wego-system
+resources:
+- app.yaml
+- demo1-gitops-deploy.yaml
+- demo1-gitops-source.yaml
